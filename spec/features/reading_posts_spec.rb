@@ -4,7 +4,7 @@ RSpec.describe "ReadingPosts", type: :feature do
 
   it "show posts list when access the index page" do
     visit root_path
-    #click_link "password"
+    page.should have_content('Posts')
   end
 
 end
