@@ -120,7 +120,7 @@ Finished in 0.03109 seconds (files took 0.81104 seconds to load)
 1 example, 1 failure
 
 #################################################
-
+l
 Failures:
 
   1) CreatingPosts A user create a new post

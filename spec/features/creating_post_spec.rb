@@ -8,8 +8,8 @@ RSpec.describe "CreatingPosts", type: :feature do
       fill_in "Title", with: "Title of post"
       fill_in "Content", with: "Content of post"
       click_button "Create Post"
-      expect(page).to have_context("Post has been created")
-      expect(page.current_path).to eq(post_path)
+      expect(page).to have_content("Post has been created")
+      expect(page.current_path).to eq(posts_path)
   end
 
 end
