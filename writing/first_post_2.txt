@@ -136,3 +136,104 @@ Finished in 0.03213 seconds (files took 0.81231 seconds to load)
 Failed examples:
 
 rspec ./spec/features/creating_post_spec.rb:5 # CreatingPosts A user create a new post
+
+
+
+################################################
+
+
+Failures:
+
+ 1) CreatingPosts A user create a new post
+    Failure/Error: @post = Post.new
+
+    NameError:
+      uninitialized constant PostsController::Post
+
+Finished in 0.32416 seconds (files took 3.39 seconds to load)
+1 example, 1 failure
+
+
+################################################
+Failed examples:
+
+rspec ./spec/features/creating_post_spec.rb:5 # CreatingPosts A user create a new post
+
+
+11:42:20 - INFO - Running: spec/features/creating_post_spec.rb
+/var/lib/gems/2.3.0/gems/activesupport-4.0.2/lib/active_support/values/time_zone.rb:282: warning: circular argument reference - now
+
+An error occurred while loading ./spec/features/creating_post_spec.rb.
+Failure/Error: ActiveRecord::Migration.check_pending!
+
+ActiveRecord::PendingMigrationError:
+ Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=test' to resolve this issue.
+
+
+
+Finished in 0.00022 seconds (files took 0.85852 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
+################################################
+
+
+Failures:
+
+ 1) CreatingPosts A user create a new post
+    Failure/Error: <%= f.text_field :title %>
+
+    ActionView::Template::Error:
+      undefined method `title' for #<Post id: nil, created_at: nil, updated_at: nil>
+
+Finished in 0.12166 seconds (files took 0.81419 seconds to load)
+1 example, 1 failure
+
+################################################
+Failures:
+
+ 1) CreatingPosts A user create a new post
+    Failure/Error: <%= f.text_field :content %>
+
+    ActionView::Template::Error:
+      undefined method `content' for #<Post:0x00000003818050>
+
+
+Finished in 0.04426 seconds (files took 0.82824 seconds to load)
+1 example, 1 failure
+
+################################################
+
+
+Failures:
+
+ 1) CreatingPosts A user create a new post
+    Failure/Error: <%= f.text_field :content %>
+
+    ActionView::Template::Error:
+      undefined method `content' for #<Post:0x000000038c1880>
+      Did you mean?  context
+                     context?
+                     context=
+
+Finished in 0.04638 seconds (files took 0.86869 seconds to load)
+1 example, 1 failure
+
+################################################
+
+
+Failures:
+
+ 1) CreatingPosts A user create a new post
+    Failure/Error: click_button "Create Post"
+
+    AbstractController::ActionNotFound:
+      The action 'create' could not be found for PostsController
+
+
+Finished in 0.07491 seconds (files took 0.81505 seconds to load)
+1 example, 1 failure
+
+################################################
+
+Finished in 0.05965 seconds (files took 0.90327 seconds to load)
+1 example, 0 failures
