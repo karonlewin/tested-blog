@@ -8,9 +8,13 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.save
-    flash[:succes] = "Post has been created"
-    redirect_to posts_path
+    if @post.save
+      flash[:succes] = "Post has been created"
+      redirect_to posts_path
+    else
+      flash.now[:danger] = "Post has not been created"
+      render :new
+    end
   end
 
 
