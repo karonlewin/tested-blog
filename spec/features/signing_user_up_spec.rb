@@ -1,5 +1,5 @@
 require "rails_helper"
-RSpec.feature "Users signup" do
+RSpec.feature "Users signup:" do
   scenario "with valid credentials" do
     pending "Sign up is disabled..."
     visit "/"

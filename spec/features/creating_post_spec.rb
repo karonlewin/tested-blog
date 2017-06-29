@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "CreatingPosts", type: :feature do
+RSpec.describe "Creating posts:", type: :feature do
 
   before do
     @john = User.create!(email: "john@example.com", password: "password")

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "ListingPosts", type: :feature do
+RSpec.describe "Listing posts:", type: :feature do
 
   before do
     @post1 = Post.create(title: "The first post", content: "Lorem ipsum dolor site amet, consectetur.")
@@ -12,7 +12,7 @@ RSpec.describe "ListingPosts", type: :feature do
     expect(page).to have_content(@post1.title)
     expect(page).to have_content(@post1.content)
     expect(page).to have_content(@post2.title)
-    expect(page).to have_content(@post2.content)    
+    expect(page).to have_content(@post2.content)
 
   end
 
