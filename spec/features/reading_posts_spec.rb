@@ -12,8 +12,7 @@ RSpec.describe "ListingPosts", type: :feature do
     expect(page).to have_content(@post1.title)
     expect(page).to have_content(@post1.content)
     expect(page).to have_content(@post2.title)
-    expect(page).to have_content(@post2.content)
-    
+    expect(page).to have_content(@post2.content)    
 
   end
 
