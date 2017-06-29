@@ -13,16 +13,18 @@
               <%= post.content %>
             </h3>
           </a>
-          <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+          <p class="post-meta">Posted on <%= post.created_at.strftime("%B %d, %Y") %></p>
         </div>
         <hr>
       <% end %>
 
+      <!--
       <ul class="pager">
         <li class="next">
           <a href="#">Older Posts &rarr;</a>
         </li>
       </ul>
+      -->
     </div>
   </div>
 </div>
