@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # OTHER GEMS
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem "font-awesome-rails"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
