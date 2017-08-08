@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20170622172226) do
   create_table "posts", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title",      limit: 255
+    t.string   "title"
     t.text     "content"
   end
 
