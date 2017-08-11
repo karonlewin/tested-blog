@@ -22,14 +22,14 @@
 
       <% @posts.each do |post| %>
         <div class="post-preview">
-          <a href="#">
+          <%= link_to post_path(post) do %>
             <h2 class="post-title">
               <%= post.title %>
             </h2>
-            <h3 class="post-subtitle">
-              <%= post.content.html_safe %>
-            </h3>
-          </a>
+          <% end %>
+          <h3 class="post-subtitle">
+            <%= post.content.html_safe %>
+          </h3>
           <p class="post-meta">Posted on <%= post.created_at.strftime("%B %d, %Y") %></p>
         </div>
         <hr>
