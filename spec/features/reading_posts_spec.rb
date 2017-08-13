@@ -10,10 +10,15 @@ RSpec.describe "Listing posts:", type: :feature do
   it "A user lists all posts" do
     visit root_path
     expect(page).to have_content(@post1.title)
-    expect(page).to have_content(@post1.content)
+    #expect(page).to have_content(@post1.content)
     expect(page).to have_content(@post2.title)
-    expect(page).to have_content(@post2.content)
-
+    #expect(page).to have_content(@post2.content)
   end
 
+  it "A user read a post" do
+    visit root_path
+    click_link @post1.title
+    expect(page).to have_content(@post1.title)
+    expect(page).to have_content(@post1.content)
+  end
 end
