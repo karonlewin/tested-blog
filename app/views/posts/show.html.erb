@@ -1,24 +1,22 @@
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('https://blackrockdigital.github.io/startbootstrap-clean-blog/img/post-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>
-                      <%= @post.title %>
-                    </h1>
-                    <!--<h2 class="subheading">Problems look mighty small from 150 miles up</h2>-->
-                    <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014
-                      <%= link_to edit_post_path(@post), html_options = {id: 'edit-post'} do %>
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                      <% end %>
-                    </span>
+<header class="intro-header" style="background-image: url('/assets/home.png')">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                  <h1>
+                    <%= @post.title %>
+                  </h1>
+                  <!--<h2 class="subheading">Problems look mighty small from 150 miles up</h2>-->
+                  <span class="meta">Posted on <%= @post.created_at.strftime("%B %-d, %Y") %>
+                    <%= link_to edit_post_path(@post), html_options = {id: 'edit-post'} do %>
+                      <span class="glyphicon glyphicon-edit" aria-hidden="true" style="margin-left: 2px;"></span>
+                    <% end %>
+                  </span>
 
-                </div>
-            </div>
-        </div>
-    </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </header>
 
 <!-- Post Content -->
@@ -26,7 +24,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <%= @post.content %>
+                <p style="text-align: justify;">
+                  <%= @post.content.html_safe %>
+                </p>
             </div>
         </div>
     </div>

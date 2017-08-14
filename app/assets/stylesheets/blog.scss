@@ -5,6 +5,7 @@
  */
 body {
   font-family: 'Lora', 'Times New Roman', serif;
+  //font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #333333;
 }
@@ -203,6 +204,7 @@ hr.small {
 }
 .intro-header .post-heading h1 {
   font-size: 35px;
+  font-family: 'Podkova', serif;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
@@ -216,7 +218,7 @@ hr.small {
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
@@ -241,6 +243,7 @@ hr.small {
   color: #ffaa00;
 }
 .post-preview > a > .post-title {
+  font-family: 'Podkova', serif;
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -255,6 +258,8 @@ hr.small {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
+  font-weight: 300;
+  //font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
