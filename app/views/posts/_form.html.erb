@@ -26,11 +26,14 @@
                     <%= @post.title %>
                   </h1>
                   <!--<h2 class="subheading">Problems look mighty small from 150 miles up</h2>-->
-                  <span class="meta">Posted by <a href="#">Karon</a> on <%= @post.created_at.strftime("%B %-d, %Y") %>
-                    <%= link_to edit_post_path(@post), html_options = {id: 'edit-post'} do %>
-                      <span class="glyphicon glyphicon-edit" aria-hidden="true" style="margin-left: 2px;"></span>
-                    <% end %>
-                  </span>
+
+                  <% if @post.created_at.present? %>
+                    <span class="meta">Posted by <a href="#">Karon</a> on <%= @post.created_at.strftime("%B %-d, %Y") %>
+                      <%= link_to edit_post_path(@post), html_options = {id: 'edit-post'} do %>
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true" style="margin-left: 2px;"></span>
+                      <% end %>
+                    </span>
+                  <% end %>
 
               </div>
           </div>

@@ -14,12 +14,6 @@ RSpec.describe "Accessing main links:", type: :feature do
     expect(page).to have_content("The idea behind the blog")
   end
 
-  scenario "A user clicks in the about contact" do
-    visit root_path
-    click_link "CONTACT"
-    expect(page).to have_content("Contact me")
-  end
-
   scenario "A user access home" do
     visit root_path
     expect(page).to have_content("A blog developed to learn and practice BDD")
