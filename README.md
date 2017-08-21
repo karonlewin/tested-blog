@@ -10,4 +10,4 @@ Then, I started to get to know more about the red-green-refactor cycle and BDD p
 
 So my goal is to keep improving the blog with new features and posts, always practicing the red-green-refactor cycle and writing about this new experience.
 
-Here you can check the [blog](blogdd.herokuapp.com).
+Here you can check the [blog](http://blogdd.herokuapp.com).
