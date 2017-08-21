@@ -1,4 +1,4 @@
-#Blog{DD}
+# Blog{DD}
 
 The main idea contained in this blog is to approach, in many ways, Behavior Driven Development (BDD) and Ruby on Rails while building something real.
 
